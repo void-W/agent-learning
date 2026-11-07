@@ -1,0 +1,36 @@
+{
+  "started_at": "2026-11-08T01:14:32+08:00",
+  "script": "verify_effort_cache.py",
+  "config": {
+    "url": "https://api.deepseek.com/anthropic/v1/messages",
+    "env_file": "/Users/wujianchang/harness/.env",
+    "model": "deepseek-flash",
+    "sequence": [
+      "high"
+    ],
+    "max_tokens": 256,
+    "delay_seconds": 0.0,
+    "system_chars": 12000,
+    "system_sha256": "4df83acd412afaba224a674c878216355ef9f2d50762995be17412e4ac552cd9",
+    "nonce": "1bd791a46f100147",
+    "user_prompt": "Reply with exactly OK and nothing else."
+  },
+  "requests": [
+    {
+      "index": 0,
+      "role": "warmup",
+      "effort": "high",
+      "elapsed_ms": 763,
+      "response_id": "a1db2bca-bac7-402b-bfae-3e525f425939",
+      "stop_reason": "end_turn",
+      "text_preview": "OK",
+      "usage_present": true,
+      "input_tokens": 1990,
+      "cache_read_input_tokens": 0,
+      "cache_creation_input_tokens": 0,
+      "output_tokens": 2,
+      "total_input_tokens": 1990,
+      "cache_hit_rate": 0.0
+    }
+  ]
+}
